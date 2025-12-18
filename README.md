@@ -67,6 +67,6 @@ For `INSERT`, `CLASSIFY`, and `ERASE`, if the input contains **any uppercase Eng
    - `illegal exception`
 2. Catch it and print:
    - `illegal argument`
-3. Continue processing remaining input normally (read the full line even if invalid)
+3. Continue processing remaining input normally
 
 ---
