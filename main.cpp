@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include "trie.hpp"
+#include "ece250_socket.h"
 using namespace std;
 
 int main() {
@@ -16,8 +17,6 @@ int main() {
            
         }
        else if (cmd == "INSERT") {
-            //cin >> classification;
-            //trieOne.insert(classification);
             getline(cin >> ws, classification);
            try {
                 trieOne.insert(classification);
@@ -27,8 +26,8 @@ int main() {
             } 
             
         }
-        else if (cmd == "CLASSIFY") {
-            cin >> input;            
+        else if (cmd == "CLASSIFY") { 
+            getline(cin >> ws, input);
             try {
                 trieOne.classify(input);
             }
@@ -37,7 +36,6 @@ int main() {
             }
         }
         else if (cmd == "ERASE") {
-            //cin >> classification;
             getline(cin >> ws, classification);
             try {
                 trieOne.erase(classification);
