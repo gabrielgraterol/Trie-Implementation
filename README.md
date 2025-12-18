@@ -23,7 +23,7 @@ This repository includes a single test program that reads commands from **stdin*
 
 #### `LOAD filename`
 Loads classifications from a file where each line is:
-`<base class>,<subclass>[,<subsubclass>...]`
+`<base class>,<subclass>,<subsubclass>...`
 
 - If a classification already exists, that line is ignored.
 - **Output:** `success` (always)
