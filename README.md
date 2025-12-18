@@ -1,6 +1,6 @@
 # Hierarchical Text Classification Trie (N-ary Trie)
 
-This project implements an **N-ary trie (N = 15)** for **hierarchical text classification**, where each level refines a class into more specific subclasses. The trie stores only the **class hierarchy**, and a provided **language-model classifier library** is used during classification to choose which child path to traverse at each level.
+This project implements an **N-ary trie** for **hierarchical text classification**, where each level refines a class into more specific subclasses. The trie stores only the **class hierarchy**, and a provided **language-model classifier library** is used during classification to choose which child path to traverse at each level.
 
 In this trie:
 - Each node represents a class level in the hierarchy
@@ -37,7 +37,7 @@ Inserts a new classification path (comma-separated).
 Classifies an input phrase using the classifier + trie traversal.  
 At each level, the classifier is called to pick the best refinement among children.
 
-- **Runtime:** `O(t)` where `t` is the number of classes in the trie.
+- **Runtime:** `O(n)` where `n` is the number of classes in the trie.
 
 #### `ERASE classification`
 Erases an entire classification path from the trie (comma-separated).
