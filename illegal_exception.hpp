@@ -6,11 +6,10 @@
 
     I referenced a video tutorial (https://www.youtube.com/watch?v=fq-ibN49bXI) on how to create a custom exception class.
 */
-
 class illegal_exception : public std::exception {
     public: 
 
-    illegal_exception(const std::string& phrase)
+    illegal_exception(const std::string& phrase) //If upper case letter is found, then output illegal argument.
         : illegal_phrase("illegal argument") {}
 
     const char* what() const noexcept {
